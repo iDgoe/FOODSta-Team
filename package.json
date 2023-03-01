@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/BC-50-HTML-CSS-Project/",
+    "build": "vite build --base=/FOODSta-Team/",
     "preview": "vite preview"
   },
   "devDependencies": {
