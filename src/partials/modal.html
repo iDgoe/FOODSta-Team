@@ -1,0 +1,70 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-window">
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./img/modal/modal-icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-text">Order Form</p>
+    <form class="modal-form">
+      <label class="modal-form-field">
+        <span class="modal-input-desc">Name</span>
+        <input
+          class="modal-input"
+          type="text"
+          name="user-name"
+          placeholder="Your name"
+          required
+          minlength="3"
+          maxlength="25"
+          pattern="[a-zA-Zа-яА-яіІїЇєЄґҐ]+"
+          title="The name must be between 3 and 25 characters"
+        />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="./img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          The name must be between 3 and 25 characters
+        </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-input-desc">Phone number</span>
+        <input
+          class="modal-input"
+          id="phone"
+          type="tel"
+          name="user-phone"
+          placeholder="+38 (0_ _ ) _ _  _ _  _ _"
+          required
+          pattern="\+[0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title=" This phone must be in the format  +38 (000) 000-00-00"
+        />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="./img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          This phone must be in the format +38 (000) 000-00-00
+        </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-input-desc">E-mail</span>
+        <input
+          class="modal-input"
+          type="email"
+          name="user-email"
+          placeholder="example@gmail.com"
+          required
+          pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+          title="Please enter a valid email address"
+        />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="./img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          Please enter a valid email address
+        </span>
+      </label>
+      <button class="modal-submit-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

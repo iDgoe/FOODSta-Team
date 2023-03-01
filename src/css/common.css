@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Мобільне меню
+  <button type='button' data-menu-open> 
+  <div class="mob-menu is-hidden" data-menu>
+  <button type="button" class="mob-close-btn" data-menu-close> */
+
+/* Модальне меню
+<button type='button' data-modal-open> 
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<button type="button" class="modal-close-btn" data-modal-close> */
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

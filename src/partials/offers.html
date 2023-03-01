@@ -1,0 +1,31 @@
+<section class="offers-section">
+    <div class="container container-offers" id="offers">
+        <h2 class="offers-title">Subscribe To Get Special Offers</h2>
+        <p class="offers-text">Order now and receive 10% off your first meal with Enjoy Your Favorite Food From Anywhere.</p>
+        <form class="offers-form">
+            <div class="offers-wrap">
+                <input 
+                class="offers-input"
+                type="email"
+                name="user-email"
+                required
+                pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                placeholder="Enter your email"
+                >
+                <div class="offers-desc">
+                    <svg class="offers-icon" width="12" height="12">
+                        <use href="./img/offers/eror.svg#icon-Group"></use>
+                    </svg>
+                    <p class="offers-input-text">Not a valid email address (example@email.com)</p>
+                </div>
+            </div>
+            <button type="submit" class="offers-btn">Subscribe</button>
+        </form>
+        <picture class="offers-image">
+            <source media="(min-width: 1280px)" srcset="./img/offers/desktop/banan-desktop.webp 1x, ./img/offers/desktop/banan-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="./img/offers/tablet/banan-tablet.webp 1x, ./img/offers/tablet/banan-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/offers/mobile/banan-mobile.webp 1x, ./img/offers/mobile/banan-mobile@2x.webp 2x">
+            <img src="./img/offers/desktop/banan-desktop.webp" width="608" height="266" alt="banan">     
+        </picture>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+:root {
+  --yellow-main: #ffe550;
+  --button-green: #bbf330;
+  --dark-green: #7eb101;
+  --white-round: #fefefe;
+  --black: #2c2c2c;
+  --border-round-color: #000000;
+  --yellow-button: #ffe450;
+  --error-color: #ff705d;
+  --white-color: #ffffff;
+  --input-color: #696969;
+  --form-text-color: #c4c4c4;
+  --error-background: #fe6060;
+  --modal-background: rgba(94, 99, 99, 0.7);
+  --color-background: #fefefe;
+  --color-background2: #f5f5f5;
+  --duration: 250ms;
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --bordermodal: rgba(12, 12, 12, 0.12);
+}
+

@@ -1,0 +1,40 @@
+.btn-up {
+  position: fixed;
+  background-color: var(--button-green);
+  right: 20px;
+  bottom: 20px;
+  border-radius: 22px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s var(--timing);
+  opacity: 0.5;
+}
+
+.btn-up::before {
+  content: '';
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url(../img/chevron-small-up.svg);
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 12px;
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: var(--dark-green);
+  }
+}

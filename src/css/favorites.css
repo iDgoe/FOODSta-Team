@@ -1,0 +1,115 @@
+.favorites-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--white-color);
+
+  text-align: center;
+}
+.favorites-title {
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  line-height: 1.18;
+}
+.favorites-text {
+  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.favorites-item {
+  /* max-width: 100%; */
+  width: 280px;
+}
+.favorites-link {
+  display: block;
+  padding: 17px;
+  border-radius: 50%;
+  border: 11px solid var(--yellow-main);
+  outline: none;
+
+  transition: border-color var(--duration) var(--timing);
+}
+
+.favorites-link:hover,
+.favorites-link:focus {
+  border-color: var(--button-green);
+}
+.favorites-img {
+  /* width: 100%; */
+  width: 224px;
+
+  transform: scale(1);
+  transition: transform var(--duration) var(--timing);
+}
+
+.favorites-link:hover .favorites-img,
+.favorites-link:focus .favorites-img {
+  transform: scale(1.05);
+}
+
+.favorites-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .favorites-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .favorites-title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+  .favorites-text {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .favorites-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .favorites-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .favorites-link {
+    border-width: 14px;
+    padding: 20px;
+  }
+  .favorites-img {
+    width: 268px;
+  }
+  .favorites-hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .favorites-section {
+    padding-bottom: 92px;
+  }
+  .favorites-item {
+    width: calc((100% - 64px) / 3);
+  }
+  .favorites-link {
+    border-width: 16px;
+    padding: 24px;
+  }
+  .favorites-img {
+    width: 315px;
+  }
+}

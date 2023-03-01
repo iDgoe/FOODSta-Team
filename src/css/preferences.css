@@ -1,0 +1,330 @@
+.preferences-section {
+  padding-top: 70px;
+  padding-bottom: 72px;
+  background-image: url(../img/preferences/mobile-bg1x.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .preferences-section {
+    background-image: url(../img/preferences/mobile-bg@2x.webp);
+  }
+}
+
+.preferences-main-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.preferences-border-apple {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: border-color var(--duration) var(--timing);
+}
+
+.preferences-border-apple:hover {
+  border-color: var(--button-green);
+}
+
+.preferences-circle-apple {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background-color: var(--color-background);
+  border: none;
+  margin: 12px;
+}
+.preferences-apple {
+  top: -40px;
+  left: 25px;
+  z-index: 1;
+  position: absolute;
+  transition: transform var(--duration) var(--timing);
+}
+
+.preferences-border-apple:hover .preferences-apple {
+  transform: scale(1.05);
+}
+
+.preferences-circle-apple::after {
+  content: '';
+  position: absolute;
+  top: 190px;
+  width: 130px;
+  height: 44.29px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  left: 50%;
+  filter: blur(6.61818px);
+  transform: translateX(-50%);
+}
+
+.preferences-container-img {
+  display: flex;
+}
+
+.preferences-tablet-img {
+  display: none;
+}
+
+.preferences-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preferences-content {
+  margin-bottom: 84px;
+}
+
+.preferences-title {
+  font-size: 28px;
+  line-height: 1.17;
+  color: var(--black);
+  margin-bottom: 28px;
+}
+
+.preferences-description {
+  font-size: 14px;
+  line-height: 1.42;
+  color: var(--black);
+}
+
+.preferences-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.preferences-subtitle {
+  font-size: 18px;
+  line-height: 1.166;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.preferences-text {
+  font-size: 14px;
+  line-height: 1.428;
+  color: var(--black);
+}
+
+.preferences-item {
+  position: relative;
+}
+
+.preferences-item::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  border-radius: 50%;
+  top: -55px;
+  background-color: var(--white-color);
+  background-image: url(../img/preferences/rocket.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.preferences-item:last-child::before {
+  background-image: url(../img/preferences/finger.svg);
+}
+
+.menu-open {
+  width: 106px;
+  height: 40px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: none;
+  background: var(--white-color);
+  border: 2px solid var(--dark-green);
+  border-radius: 30px;
+  color: var(--black);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+  margin-top: 28px;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: background-color var(--duration) var(--timing);
+}
+
+.menu-open:hover,
+.menu-open:focus {
+  background-color: var(--button-green);
+}
+
+.preferences-link {
+  color: var(--black);
+  font-size: 13.56px;
+  line-height: 1.53;
+  outline: none;
+  transition: color var(--duration) var(--timing);
+}
+
+.preferences-link-svg {
+  fill: var(--black);
+  margin-bottom: -2px;
+  margin-left: 8px;
+  outline: none;
+  transition: color var(--duration) var(--timing),
+    fill var(--duration) var(--timing);
+}
+
+.preferences-link:hover,
+.preferences-link:focus {
+  color: var(--dark-green);
+}
+
+.preferences-link:hover .preferences-link-svg {
+  fill: var(--dark-green);
+}
+.preferences-tablet-img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .preferences-section {
+    padding-top: 187px;
+    padding-bottom: 88px;
+    background-image: url(../img/preferences/tablet-bg1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .preferences-section {
+      background-image: url(../img/preferences/tablet-bg@2x.webp);
+    }
+  }
+
+  .preferences-container-img {
+    justify-content: space-between;
+    display: flex;
+  }
+  .preferences-border-apple {
+    margin: 0;
+    width: 357px;
+    height: 357px;
+  }
+
+  .preferences-circle-apple {
+    width: 326px;
+    height: 326px;
+  }
+
+  .preferences-apple {
+    top: -50px;
+    left: 38px;
+  }
+
+  .preferences-circle-apple::after {
+    top: 240px;
+    width: 164px;
+    height: 57px;
+  }
+
+  .preferences-title {
+    width: 568px;
+    font-size: 42px;
+    line-height: 1.16;
+    margin-bottom: 20px;
+  }
+
+  .preferences-description {
+    width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .preferences-content {
+    margin-bottom: 88px;
+  }
+
+  .preferences-list {
+    flex-wrap: nowrap;
+  }
+
+  .preferences-tablet-img {
+    display: block;
+    display: flex;
+    align-items: end;
+    gap: 44px;
+    margin-bottom: 68px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .preferences-section {
+    padding-top: 231px;
+    padding-bottom: 43px;
+    background-image: url(../img/preferences/descktop-bg1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .preferences-section {
+      background-image: url(../img/preferences/desktop-bg@2x.webp);
+    }
+  }
+  .preferences-main-block {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+
+  .preferences-border-apple {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .preferences-circle-apple {
+    width: 502px;
+    height: 502px;
+  }
+
+  .preferences-apple {
+    top: -80px;
+    left: 55px;
+  }
+
+  .preferences-circle-apple::after {
+    top: 370px;
+    width: 257px;
+    height: 87px;
+  }
+
+  .preferences-title {
+    line-height: 1.19;
+  }
+
+  .preferences-subtitle {
+    line-height: 1.388;
+  }
+
+  .preferences-text {
+    line-height: 1.5;
+  }
+
+  .preferences-tablet-img {
+    display: none;
+  }
+}
